@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <u1>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </u1>
+        </nav>
+        <div class="header-text">
+            <p>Tech-A-Intern</p>
+            <p>Portfolio Task</p>
+            <h1>Hi,This is<span>    Bhavana</span><br> from Vijayawada</h1>
+        </div>
+    </div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I Bhavana Nerella.I am from Vijayawada.I am pursuing my B.Tech final year at Andhra Loyola Institute of Engineering and Technology.I had completed my 2 months internship at Codegnan Solutions Pvt.Ltd in the Domain of Python Full Stack.I had done a project called PayRoll Process Management System. I had done a virtual intership at Hackveda on Python Domain.My Hobbies are drawing,listening to music,playing badminton.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>Python</span><br></li>
+                    <li><span>Java</span><br></li>
+                    <li><span>HTML</span><br></li>
+                    <li><span>CSS</span><br></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+                <ul>
+                    <li><span>Python full Stack intern at codegnan</span><br></li>
+                    <li><span>Python Intern at Hackveda</span><br></li>
+                    
+                </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>2020-2024</span><br>B.Tech-Andhra Loyola Institute of Engineering and Technology</li>
+                    <li><span>2020</span><br>Intermediate-Narayana Junior College</li>
+                    <li><span>2018</span><br>10th-Atkinson Senior Secondary School</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="hobbies-list">
+            <div class="hobbies">
+                <img src="images/hob-1.png">
+                <div class="layer">
+                    <h3>Playing Badminton</h3>
+                    <p>I use to play shuttle in my free time with my friends and family members.</p>
+                    <a href="#"></a>
+                </div>
+            </div>
+                <div class="hobbies">
+                    <img src="images/hob-2.png">
+                    <div class="layer">
+                        <h3>Listening to Music</h3>
+                        <p>I feel like to listen the music when I feel some stress.It use to relax my mind.</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            <div class="hobbies">
+                    <img src="images/hob-3.png">
+                    <div class="layer">
+                        <h3>Painting</h3>
+                        <p>I use to do drawing,paper crafts .....when I feel bored.</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact</h1>
+                    <p>bhavananerella71@gmail.com</p>
+                    <p>7729870702</p>
+                <a href="images/Bhavana_Nerella.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="">Submit</button>
+                    </form>   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tablinks=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        
+        for(tablink of tabcontents){
+            tablink.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script> 
+
+</body>
+</html>
